@@ -1,5 +1,8 @@
-# vue_my
+# 参考文章
+https://www.jianshu.com/p/5aba2aecc1f3
 
+# vue_my
+sudo vue init webpack vue_my
 > A Vue.js project
 
 ## Build Setup
