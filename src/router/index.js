@@ -7,6 +7,7 @@ import VueAxios from 'vue-axios'
 import axios from 'axios'
 import Company from '@/components/company/index'
 import Layout from '@/components/Layout'
+import Add from '@/components/Add'
 
 Vue.use(Router)
 
@@ -38,6 +39,11 @@ export default new Router({
       path: '/layout',
       name: 'Layout',
       component: Layout
+    },
+    {
+      path: '/add',
+      name: 'Add',
+      component: Add
     }
   ]
 })
