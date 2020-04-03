@@ -30,7 +30,7 @@ export default {
   },
   methods: {
     login: function () {
-      var url = '/api/user/index2/'
+      let url = '/api/user/index2/'
       console.log(url)
       Vue.axios.get(url).then((response) => {
         this.channel_data = response.data.data
