@@ -12,6 +12,10 @@
 
 <script>
 import Vue from 'vue'
+import VueAxios from 'vue-axios'
+import axios from 'axios'
+Vue.use(VueAxios, axios)
+
 export default {
   name: 'CopName',
   data () {
@@ -23,7 +27,8 @@ export default {
   },
   methods: {
     login: function () {
-      var url = '/api/channelinfos/'
+      var url = '/api/user/index/'
+      console.log(url)
       Vue.axios.get(url).then((response) => {
         this.channel_data = response.data.results
         console.log('response:' + response)

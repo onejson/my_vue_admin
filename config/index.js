@@ -10,7 +10,15 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+        '/api':{
+          target:'http://xinyi.hahastudy.com', // 后台接口地址
+          changeOrigin: true, // 是否允许跨域
+          pathRewrite:{
+            '^/api':'/api', // 重写
+          }
+        }
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
