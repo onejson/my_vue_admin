@@ -25,6 +25,9 @@ export default {
       channel_data: []
     }
   },
+  mounted () {
+    this.login() // 初始化时载入
+  },
   methods: {
     login: function () {
       var url = '/api/user/index2/'
