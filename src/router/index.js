@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
 import CopClass from '@/components/EnterPage'
 import Login from '@/components/Login'
 import VueAxios from 'vue-axios'
@@ -17,18 +16,17 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
-    },
-    {
-      path: '/enter',
-      name: 'First',
-      component: CopClass
+      redirect: '/login'
     },
     {
       path: '/login',
       name: 'Login',
       component: Login
+    },
+    {
+      path: '/enter',
+      name: 'First',
+      component: CopClass
     },
     {
       path: '/company/index',
