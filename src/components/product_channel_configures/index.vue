@@ -4,11 +4,11 @@
     <el-button type="primary" @click="login">新建产品配置组</el-button>
     <el-table :data="channel_data" border justify="center" style="width: 100%">
       <el-table-column prop="id" label="id"></el-table-column>
-      <el-table-column prop="nt_mem_nt_num" label="配置组合名称"></el-table-column>
-      <el-table-column prop="nt_mem_nt_num" label="客服电话"></el-table-column>
-      <el-table-column prop="nt_mem_nt_num" label="客服工作时间"></el-table-column>
-      <el-table-column prop="nt_mem_nt_num" label="公司名称"></el-table-column>
-      <el-table-column prop="nt_mem_nt_num" label="计费模版名称"></el-table-column>
+      <el-table-column prop="name" label="配置组合名称"></el-table-column>
+      <el-table-column prop="serviceMobile" label="客服电话"></el-table-column>
+      <el-table-column prop="serviceTime" label="客服工作时间"></el-table-column>
+      <el-table-column prop="companyName" label="公司名称"></el-table-column>
+      <el-table-column prop="diamondTemplate" label="计费模版名称"></el-table-column>
       <el-table-column prop="nt_mem_nt_num" label="操作"></el-table-column>
     </el-table>
     <el-pagination
