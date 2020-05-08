@@ -59,13 +59,12 @@ export default {
   methods: {
     doLogin () { // 一点击登录按钮，这个方法就会执行
       // alert(JSON.stringify(this.user))// 可以直接把this.user对象传给后端进行校验用户名和密码
-
       let url = 'http://127.0.0.1:8080/admin/home/login'
       console.log(url)
       Vue.axios.post(url).then((response) => {
         let result = response.data
         if (result['error_code'] === 0) {
-          window.location.href = '/company/index'
+          window.location.href = 'http://localhost:8081/#/company/index'
         } else {
           alert('用户名密码错误')
         }
