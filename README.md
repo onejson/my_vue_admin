@@ -4,6 +4,10 @@ https://www.jianshu.com/p/5aba2aecc1f3
 # 项目地址
 https://github.com/qq971876229/my_vue_admin
 
+# 升级
+## 升级单个包到指定版本
+npm install webpack-bundle-analyzer@3.3.2
+
 # vue_my
 sudo vue init webpack vue_my
 > A Vue.js project
