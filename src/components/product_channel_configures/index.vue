@@ -38,7 +38,7 @@ export default {
   },
   methods: {
     login: function () {
-      let url = 'http://127.0.0.1:8080/admin/product_channel_configures/index/'
+      let url = 'http://127.0.0.1:8080/admin/product_channel_configures/index'
       Vue.axios.get(url).then((response) => {
         this.channel_data = response.data.data
         console.log('respons22e22332:' + response.data.data[0])
