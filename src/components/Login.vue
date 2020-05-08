@@ -64,7 +64,7 @@ export default {
       Vue.axios.post(url).then((response) => {
         let result = response.data
         if (result['error_code'] === 0) {
-          window.location.href = 'http://localhost:8081/#/company/index'
+          window.location.href = 'http://localhost:8081/#/admin'
         } else {
           alert('用户名密码错误')
         }
