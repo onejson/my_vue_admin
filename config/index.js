@@ -12,7 +12,7 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
         '/api':{
-          target:'http://xinyi.hahastudy.com', // 后台接口地址
+          target:'http://www.duoduo_php.com', // 后台接口地址
           changeOrigin: true, // 是否允许跨域
           pathRewrite:{
             '^/api':'/api', // 重写
