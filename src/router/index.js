@@ -7,6 +7,7 @@ import axios from 'axios'
 import Company from '@/components/company/index'
 import Layout from '@/components/Layout'
 import Add from '@/components/Add'
+import Dashboard from '@/components/Dashboard'
 
 Vue.use(Router)
 
@@ -42,6 +43,11 @@ export default new Router({
       path: '/add',
       name: 'Add',
       component: Add
+    },
+    {
+      path: '/dashboard',
+      name: 'Dashboard',
+      component: Dashboard
     }
   ]
 })
