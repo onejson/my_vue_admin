@@ -17,12 +17,19 @@ module.exports = {
           pathRewrite:{
             '^/api':'/api', // 重写
           }
+        },
+      '/admin':{
+        target:'http://127.0.0.1:8080', // 后台接口地址
+        changeOrigin: true, // 是否允许跨域
+        pathRewrite:{
+          '^/admin':'/admin', // 重写 admin
         }
+      }
     },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
-    port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
+    port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined,这里的端口号会被上面的地址代理
     autoOpenBrowser: false,
     errorOverlay: true,
     notifyOnErrors: true,
