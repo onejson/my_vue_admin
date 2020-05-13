@@ -7,6 +7,8 @@ import Layout from '@/components/Layout'
 import Add from '@/components/Add'
 // eslint-disable-next-line camelcase
 import product_channel_configures_index from '@/components/product_channel_configures/index'
+// import Login2 from '@/components/Login2'
+import Chat from '@/components/Chat'
 
 Vue.use(Router)
 
@@ -24,6 +26,11 @@ export default new Router({
       component: Login
     },
     {
+      path: '/chat',
+      name: 'Chat',
+      component: Chat
+    },
+    {
       path: '/admin',
       name: 'Layout',
       component: Layout,
@@ -37,7 +44,8 @@ export default new Router({
         path: '/add',
         name: 'Add',
         component: Add
-      }]
+      }
+      ]
     }
   ]
 })
